@@ -22,7 +22,7 @@ function countDown(number) {
 
     const id = setInterval(() => {
         console.log(delay,'settimeout')
-        tick.src = 'clock.mp3';
+        tick.src = 'Audio/clock.mp3';
         tick.play();
         content.appendChild(tick);
         if (number >= 2) {
@@ -69,7 +69,7 @@ function countDown(number) {
             minute.innerText = `0${number - 1}:`;
             tick.buffered=true
             clearInterval(id);
-            alarm.src = 'SsAoiqg1LYP.mp3';
+            alarm.src = 'Audio/SsAoiqg1LYP.mp3';
             alarm.loop = true;
             alarm.play();
             content.appendChild(alarm);
